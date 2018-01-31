@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jcneto.calculette.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewLCD"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@drawable/display_view"
+            android:paddingRight="30dp"
+            android:paddingTop="30dp"
+            android:text="0123456789"
+            android:textAlignment="textEnd"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/b_ac"
+                android:layout_width="120dp"
+                android:layout_height="66dp"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttom_action"
+                android:text="AC" />
+
+            <Button
+                android:id="@+id/b_paren_o"
+                android:layout_width="34dp"
+                android:layout_height="66dp"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttom_paren"
+                android:text="(" />
+
+            <Button
+                android:id="@+id/b_paren_f"
+                android:layout_width="32dp"
+                android:layout_height="66dp"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttom_paren"
+                android:text=")" />
+
+            <Button
+                android:id="@+id/b_plus"
+                android:layout_width="66dp"
+                android:layout_height="66dp"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttom_signer"
+                android:text="+" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
